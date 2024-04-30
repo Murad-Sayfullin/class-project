@@ -1,0 +1,110 @@
+.profile-page__wrapper-content.main-content{
+    padding:  20px;
+    margin: 24px 28px 24px 0;
+    background-color: $white;
+    border: 1px solid $gray-300;
+
+    .main-content{
+        &__top{
+            &-title{
+                margin-bottom: 20px;
+                font-weight: 600;
+                font-size: 16px;
+                margin-left: 10px;
+            }
+        }
+
+        &__center{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-top: 1px solid $gray-300;
+            padding: 20px 0;
+
+            &-button{
+                padding: 12px;
+                background-color: $primary;
+                color: $white;
+                font-weight: 500;
+                font-size: 16px;        
+                border: 1px solid $primary;
+                @include trn();
+
+                @include hover() {
+                    &:hover {
+                      background-color: transparent;
+                      color: $primary;
+                    }
+                  }
+            }
+
+            &-list{
+                display: flex;
+                justify-content: space-between;
+                
+                &-strong{
+                    color: $gray-500;
+                } 
+
+                &-line{
+                    width: 100px;
+                    flex: 1 1 auto;
+                    border-bottom: 2px dotted $gray-300;
+                }
+            }
+        }
+
+        &__bottom{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            &-title{
+                font-weight: 600;
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            &-list{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-top: 10px;
+                border-top: 1px solid $gray-300;
+            }
+
+            &-info{
+                display: flex;
+                justify-content: space-between;
+               margin-top: 10px;
+
+               &-strong{
+                color: $gray-500;
+               }
+               
+               &-line{
+                width: 100px;
+                flex: 1 1 auto;
+                border-bottom: 2px dotted $gray-300;
+               }
+            }
+
+            &-button{
+                margin-top: 10px;
+                padding: 12px;
+                background-color: $primary;
+                color: $white;
+                font-weight: 500;
+                font-size: 16px;        
+                border: 1px solid $primary;
+                @include trn();
+
+                @include hover() {
+                    &:hover {
+                      background-color: transparent;
+                      color: $primary;
+                    }
+                  }
+            }
+        }       
+    }
+}

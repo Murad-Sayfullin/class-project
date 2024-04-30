@@ -1,0 +1,64 @@
+.profile-page__wrapper-sidebar.personal-menu{
+    width: 350px;
+    padding:  20px;
+    margin: 24px 28px 24px 0;
+    background-color: $white;
+    border: 1px solid $gray-300;
+    border-right: 1px solid $gray-300;
+
+    .personal-menu{
+
+
+       &__top{
+        &-title{
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+       }
+
+       &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-top: 1px solid $gray-300;
+        padding: 20px 0;
+       }
+
+       &__active{
+        padding: 10px;
+           font-weight: 400;
+           font-size: 14px;
+           border: 1px solid $gray-300;
+           border-radius: 4px;
+           background-color: $primary-light;
+           
+          @include trn();
+
+          @include hover() {
+                 &:hover {
+                     font-weight: 500;
+                     color: $dark;
+                 }
+            }
+       }
+
+       &__content{
+           padding: 10px;
+           font-weight: 400;
+           font-size: 14px;
+           border: 1px solid $gray-300;
+           border-radius: 4px;
+           
+          @include trn();
+
+          @include hover() {
+                 &:hover {
+                     background-color: $primary-light;
+                     font-weight: 500;
+                     color: $dark;
+                 }
+            }
+        }
+    }
+}
